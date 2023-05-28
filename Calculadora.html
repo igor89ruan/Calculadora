@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Online</title>
+</head>
+<body>
+    <h1>Calculadora Online</h1>
+    <div class="calculadora">
+        <input type="text" id="display" readonly>
+
+        <div class="botoes">
+            <button id="ac" onclick="limpadisplay('AC')">AC</button>
+            <button id="mais-menos" onclick="addnodisplay('-')">+/-</button>
+            <button id="porcentagem" onclick="addnodisplay('%')">%</button>
+            <button id="dividir" onclick="addnodisplay('/')">÷</button>
+            <button id="sete" onclick="addnodisplay('7')">7</button>
+            <button id="oito" onclick="addnodisplay('8')">8</button>
+            <button id="nove" onclick="addnodisplay('9')">9</button>
+            <button id="vezes" onclick="addnodisplay('*')">x</button>
+            <button id="quatro" onclick="addnodisplay('4')">4</button>
+            <button id="cinco" onclick="addnodisplay('5')">5</button>
+            <button id="seis" onclick="addnodisplay('6')">6</button>
+            <button id="menos" onclick="addnodisplay('-')">-</button>
+            <button id="um" onclick="addnodisplay('1')">1</button>
+            <button id="dois" onclick="addnodisplay('2')">2</button>
+            <button id="tres" onclick="addnodisplay('3')">3</button>
+            <button id="mais" onclick="addnodisplay('+')">+</button>
+            <button id="zero" onclick="addnodisplay('0')">0</button>
+            <button id="virgula" onclick="addnodisplay(',')">,</button>
+            <button id="igual" onclick="calculate()">=</button>
+        </div>
+
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>
